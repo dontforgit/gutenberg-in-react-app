@@ -98,6 +98,11 @@ body {
   }
 }
 
+.components-button {
+  margin: 10px;
+  clear: both;
+}
+
 .editor-container {
   flex: 1;
   display: flex;
@@ -110,6 +115,14 @@ body {
   margin: 20px;
   border: 1px solid #ccc;
   box-shadow: 0px 0px 5px #ccc;
+  min-height: 20rem;
+
+  &.saved_content {
+    padding: 20px;
+    width: 35%;
+    float: left;
+    color: rgba(0, 0, 0, 0.45);
+  }
 }
 
 .playground__sidebar {

@@ -1,34 +1,5 @@
 [
   {
-    "clientId": "1",
-    "innerBlocks": [],
-    "isValid": true,
-    "name": "core/paragraph",
-    "attributes": {
-      "content": "Something about <a href=\"#phrase-company?ref=COMPANY%7CTGT;onlineSignificance=prominent\" ticker-selection=\"Target Corp. - TGT - U.S.: NYSE\" data-type=\"Stock\" title=\"Company Tag\" class=\"phrase-company-inline phrase-company-inline\">Target</a>.",
-      "dropCap": false
-    }
-  },
-  {
-    "clientId": "2",
-    "isValid": true,
-    "name": "dj/standfirst",
-    "innerBlocks": [],
-    "attributes": {
-      "message": null,
-      "content": "Enter your deck here..."
-    }
-  },
-  {
-    "clientId": "3",
-    "isValid": true,
-    "name": "dj/dj-wp-divider",
-    "innerBlocks": [],
-    "attributes": {
-      "preview": false
-    }
-  },
-  {
     "clientId": "4",
     "isValid": true,
     "name": "core/paragraph",

@@ -12,6 +12,7 @@ import { Popover, SlotFillProvider } from '@wordpress/components';
 import { registerCoreBlocks } from '@wordpress/block-library';
 import '@wordpress/format-library';
 import { useDispatch } from '@wordpress/data';
+import { serialize } from '@wordpress/blocks';
 
 // Additional imports and setups
 import { setGlobals } from './utils';
@@ -45,8 +46,14 @@ function App() {
         <div className="App">
             <div className="editor">
                 <div>
-                    <button onClick={() => setBlocks(initialBlocks)}>Clear Editor</button>
-                    <button onClick={saveBlocks}>Save Editor</button>
+                    <button
+                        className='components-button editor-post-publish-button is-secondary'
+                        onClick={() => setBlocks(initialBlocks)}
+                    >Clear Editor</button>
+                    <button
+                        className='components-button editor-post-publish-button is-primary'
+                        onClick={saveBlocks}
+                    >Save Editor</button>
                 </div>
                 <div className="playground editor-container">
                     <SlotFillProvider>
@@ -73,6 +80,16 @@ function App() {
                         </BlockEditorProvider>
                     </SlotFillProvider>
                 </div>
+            </div>
+            <div className="playground__content saved_content">
+                <h2>Gutenberg Markup:</h2>
+                <pre>
+                    {serialize(blocks)}
+                </pre>
+            </div>
+            <div className="playground__content saved_content">
+                <h2>Block Data:</h2>
+                <pre>{JSON.stringify(blocks, null, 2)}</pre>
             </div>
         </div>
     );
