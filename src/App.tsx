@@ -45,7 +45,7 @@ function App() {
     return (
         <div className="App">
             <div className="editor">
-                <div>
+                <div className="action-buttons">
                     <button
                         className='components-button editor-post-publish-button is-secondary'
                         onClick={() => setBlocks(initialBlocks)}
